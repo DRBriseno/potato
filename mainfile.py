@@ -48,12 +48,12 @@ def displayHomepage():
     #</form>
     #"""
 
-app.route('/formExample')
+@app.route('/formExample')
 def firstForm():
     return render_template('form.html')
 
 
-app.route('/results', method=['GET'])
+@app.route('/results', method=['GET'])
 def simple_pizza_results():
 
 # a context object contains all the necessary form data the template
